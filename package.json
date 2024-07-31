@@ -3,5 +3,8 @@
   "private": true,
   "workspaces": [
     "router-examfirst"
-  ]
+  ],
+  "dependencies": {
+    "react-router-dom": "^6.25.1"
+  }
 }
