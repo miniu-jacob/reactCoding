@@ -5,7 +5,8 @@
     "router-examfirst",
     "shopping-mall-first",
     "redux-study",
-    "study-phonebook"
+    "study-phonebook",
+    "react-query-demo"
   ],
   "dependencies": {
     "@restart/ui": "^1.8.0",
