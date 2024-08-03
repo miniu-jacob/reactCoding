@@ -1,0 +1,40 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+.title {
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+
+.page-area {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+  /* text-align: center; */
+}
+
+.form-area {
+  /* border: 1px solid red; */
+  font-weight: 600;
+}
+
+.contact-area {
+  display:flex;
+  /* margin-top: 100px; */
+  /* justify-content: flex-start; */
+  /* border: 1px solid green; */
+  /* align-items: center; */
+  /* height: 200px; */
+  /* box-sizing: border-box; */
+}
+
+.contact-area button {
+  /* height: 40px; */
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+.contactlist-area {
+  margin-top: 27px;
+}
