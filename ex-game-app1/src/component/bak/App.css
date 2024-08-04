@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.boxes {
+    border: 10px solid black;
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.boxes h2 {
+    margin: 10px;
+}
+
+.img-src {
+    cursor: pointer;
+}
+
+.user-pick-area {
+    display: flex;
+    justify-content: center;
+}
+
+.choice {
+    margin: 5px;
+    cursor: pointer;
+    /* text-align: center; */
+}
+
+.win {
+    border: 10px solid green;
+}
+
+.loser {
+    border: 10px solid red;
+
+}

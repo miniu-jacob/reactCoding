@@ -6,7 +6,8 @@
     "shopping-mall-first",
     "redux-study",
     "study-phonebook",
-    "react-query-demo"
+    "react-query-demo",
+    "ex-game-app1"
   ],
   "dependencies": {
     "@restart/ui": "^1.8.0",
