@@ -4622,7 +4622,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:^4.0.0, browserslist@npm:^4.18.1, browserslist@npm:^4.21.10, browserslist@npm:^4.21.4, browserslist@npm:^4.23.0, browserslist@npm:^4.23.1, browserslist@npm:^4.23.3":
+"browserslist@npm:^4.0.0, browserslist@npm:^4.18.1, browserslist@npm:^4.21.10, browserslist@npm:^4.21.4, browserslist@npm:^4.23.1, browserslist@npm:^4.23.3":
   version: 4.23.3
   resolution: "browserslist@npm:4.23.3"
   dependencies:
@@ -4876,6 +4876,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"class-component-demo@workspace:class-component-demo":
+  version: 0.0.0-use.local
+  resolution: "class-component-demo@workspace:class-component-demo"
+  dependencies:
+    react: ^18.3.1
+    react-dom: ^18.3.1
+    react-scripts: 5.0.1
+  languageName: unknown
+  linkType: soft
+
 "classnames@npm:^2.3.2":
   version: 2.5.1
   resolution: "classnames@npm:2.5.1"
@@ -5122,25 +5132,25 @@ __metadata:
   linkType: hard
 
 "core-js-compat@npm:^3.36.1, core-js-compat@npm:^3.37.1":
-  version: 3.37.1
-  resolution: "core-js-compat@npm:3.37.1"
+  version: 3.38.0
+  resolution: "core-js-compat@npm:3.38.0"
   dependencies:
-    browserslist: ^4.23.0
-  checksum: 5e7430329358bced08c30950512d2081aea0a5652b4c5892cbb3c4a6db05b0d3893a191a955162a07fdb5f4fe74e61b6429fdb503f54e062336d76e43c9555d9
+    browserslist: ^4.23.3
+  checksum: bd410be723e3621f7e8c7a4dce91eaefc603d95133da89c042dd961aca368c7281894bd9af14116a455a4473288fb6c121b185cb8a1e8290b8ace15aedb315f2
   languageName: node
   linkType: hard
 
 "core-js-pure@npm:^3.23.3":
-  version: 3.37.1
-  resolution: "core-js-pure@npm:3.37.1"
-  checksum: a13a40e3951975cffef12a0933d3dbf1ecedbf9821e1ec8024884b587744951ad30e3762a86bcb8e2a18fdd4b8d7c8971b2391605329799fc04e1fc1e1397dc1
+  version: 3.38.0
+  resolution: "core-js-pure@npm:3.38.0"
+  checksum: 29aac7b56778370523f6a58f713c730975b097fea19838f93705730bd95d2da78b116e561e2cda637dde4cebe0a88baf9a5ce4e391732c39cbc5e55dc95bb38c
   languageName: node
   linkType: hard
 
 "core-js@npm:^3.19.2":
-  version: 3.37.1
-  resolution: "core-js@npm:3.37.1"
-  checksum: 2d58a5c599f05c3e04abc8bc5e64b88eb17d914c0f552f670fb800afa74ec54b4fcc7f231ad6bd45badaf62c0fb0ce30e6fe89cedb6bb6d54e6f19115c3c17ff
+  version: 3.38.0
+  resolution: "core-js@npm:3.38.0"
+  checksum: 71ef0598da69daee2b46fa1f82f074019981656f7cae26fed2b7f076c611e330a99ba5c70156ae37682f59a8d6ec6486119c70cb283c9fff25bd4f20db7fdc27
   languageName: node
   linkType: hard
 
@@ -13966,6 +13976,18 @@ __metadata:
   checksum: 2abc306c96930b757972a1c4650eb6b25b5d99f24088714957f88629e137db569368c5de0e57986c89ea70db2f1df9bba11a87cb6d0c8694b6f53a0159fab3bf
   languageName: node
   linkType: hard
+
+"weather-study-demo@workspace:weather-study-demo":
+  version: 0.0.0-use.local
+  resolution: "weather-study-demo@workspace:weather-study-demo"
+  dependencies:
+    bootstrap: ^5.3.3
+    react: ^18.3.1
+    react-bootstrap: ^2.10.4
+    react-dom: ^18.3.1
+    react-scripts: 5.0.1
+  languageName: unknown
+  linkType: soft
 
 "web-vitals@npm:^2.1.4":
   version: 2.1.4

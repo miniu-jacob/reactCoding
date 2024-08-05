@@ -7,7 +7,9 @@
     "redux-study",
     "study-phonebook",
     "react-query-demo",
-    "ex-game-app1"
+    "ex-game-app1",
+    "class-component-demo",
+    "weather-study-demo"
   ],
   "dependencies": {
     "@restart/ui": "^1.8.0",
