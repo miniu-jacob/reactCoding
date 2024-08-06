@@ -9,7 +9,8 @@
     "react-query-demo",
     "ex-game-app1",
     "class-component-demo",
-    "weather-study-demo"
+    "weather-study-demo",
+    "route-tutorial"
   ],
   "dependencies": {
     "@restart/ui": "^1.8.0",
