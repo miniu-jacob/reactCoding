@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  /* width: 40%; */
+  margin: 0 auto;
+  text-align: center;
+  height: 500px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+
+.link-pages {
+  /* width: 30%; */
+}

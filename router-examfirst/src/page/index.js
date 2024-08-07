@@ -1,0 +1,9 @@
+export { default as About } from './About';
+export { default as Home } from './Home';
+export { default as Products } from './Products';
+export { default as ProductsDetailPage } from './ProductsDetailPage';
+export { default as SearchResult } from './SearchResult';
+export { default as FilteredProducts } from './FilteredProducts';
+export { default as Member } from './Member';
+export { default as Login } from './Login';
+export { default as PrivateRoute } from './PrivateRoute';

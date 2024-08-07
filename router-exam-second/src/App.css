@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.menu-area {
+    text-align: center;
+    margin: 10px;
+}
+
+.menu-area button {
+    margin: 10px;
+    padding: 10px;
+}
