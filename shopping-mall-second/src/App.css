@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+html, body {
+    background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-bar {
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 10px;
+    padding-right: 20px;
+    justify-content: flex-end;
+    /* margin-bottom: 10px;    */
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-bar div {
+    margin: 5px;
+    padding-right: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-section {
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.menu-area {
+    padding: 10px;
+    /* border: 1px solid red; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-area button {
+    margin: 5px;
+    border: none;
+    background-color: white;
+    font-size: .9rem;
+}
+
+.row { 
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.search-bar { 
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    
+}
+
+.search-bar div {
+    margin-right: 5px;
+}
+
+.search-area { 
+    /* display: flex; */
+    
+    flex-direction: column;
+    position: absolute;
+    right:0;
+    /* justify-content: flex-end; */
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.input-box {
+    border: none;
+    /* border-bottom: 1px solid gray ; */
+    width: 100%;
+    max-width: 500px;
+    transition: width 0.3s ease-in-out;
+    font-size: .9rem;
+}
+
+.input-box:focus {
+    /* border: none; */
+    outline: none;
+}
+
+@media (max-width: 1200px){
+    .input-box {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 570px){
+    .search-area {
+        position: static;
+    }
+    .nav-bar { 
+        justify-content: flex-start;
+    }
+    .input-box {
+        max-width: 100%;
+    }
 }
