@@ -11,7 +11,8 @@
     "class-component-demo",
     "weather-study-demo",
     "route-tutorial",
-    "router-exam-second"
+    "router-exam-second",
+    "shopping-mall-second"
   ],
   "dependencies": {
     "@restart/ui": "^1.8.0",
