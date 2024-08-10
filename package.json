@@ -12,7 +12,8 @@
     "weather-study-demo",
     "route-tutorial",
     "router-exam-second",
-    "shopping-mall-second"
+    "shopping-mall-second",
+    "redux-online-study-demo"
   ],
   "dependencies": {
     "@restart/ui": "^1.8.0",

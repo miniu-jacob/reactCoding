@@ -3274,11 +3274,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 22.1.0
-  resolution: "@types/node@npm:22.1.0"
+  version: 22.2.0
+  resolution: "@types/node@npm:22.2.0"
   dependencies:
     undici-types: ~6.13.0
-  checksum: 3544c35da06009790a2e07742a7dfa0ac0f0d64ec47d9e6d3edf0ff6dcfc1a7cc2efdc5e524e80f8ed80aa37154513b2c1c724f95146ff89fc5aefb8e33575f2
+  checksum: 63724799337bfb57719a1992690e738341d824e1744a2ac52c5278a008fbfadf99765519c19858feb80418cc7da0d5c8bdf7ea4d82973869b3882bd602c48ade
   languageName: node
   linkType: hard
 
@@ -4775,9 +4775,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001646":
-  version: 1.0.30001650
-  resolution: "caniuse-lite@npm:1.0.30001650"
-  checksum: 4892c25200aef4dca83feba232bb0d4c1dbbdffb3376394c1be7e75a6be686010e88bc2172cb5cf8dafa5e5de08dc8e7870c4fe97dae3d615979a7be5a091db7
+  version: 1.0.30001651
+  resolution: "caniuse-lite@npm:1.0.30001651"
+  checksum: c31a5a01288e70cdbbfb5cd94af3df02f295791673173b8ce6d6a16db4394a6999197d44190be5a6ff06b8c2c7d2047e94dfd5e5eb4c103ab000fca2d370afc7
   languageName: node
   linkType: hard
 
@@ -6731,9 +6731,9 @@ __metadata:
   linkType: hard
 
 "eta@npm:^3.4.0":
-  version: 3.4.0
-  resolution: "eta@npm:3.4.0"
-  checksum: c1fe11e404667853fa37ffca0a7ee6277a8da97b6e3bbac57adeb7c9d7e58c3a968b17d1e24d6768d286622d0931db7a04f276dfb128c4d09282960043125cd7
+  version: 3.4.1
+  resolution: "eta@npm:3.4.1"
+  checksum: 7167cbbfcce7b58ee64713a27e4e73f5d0b1da95f3a418ae972772305d61259815347057149bb4851c9514acd90496de556035c56fe556035aa934d11d4d8a33
   languageName: node
   linkType: hard
 
@@ -7088,12 +7088,12 @@ __metadata:
   linkType: hard
 
 "foreground-child@npm:^3.1.0":
-  version: 3.2.1
-  resolution: "foreground-child@npm:3.2.1"
+  version: 3.3.0
+  resolution: "foreground-child@npm:3.3.0"
   dependencies:
     cross-spawn: ^7.0.0
     signal-exit: ^4.0.1
-  checksum: 3e2e844d6003c96d70affe8ae98d7eaaba269a868c14d997620c088340a8775cd5d2d9043e6ceebae1928d8d9a874911c4d664b9a267e8995945df20337aebc0
+  checksum: 1989698488f725b05b26bc9afc8a08f08ec41807cd7b92ad85d96004ddf8243fd3e79486b8348c64a3011ae5cc2c9f0936af989e1f28339805d8bc178a75b451
   languageName: node
   linkType: hard
 
@@ -12117,6 +12117,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"redux-online-study-demo@workspace:redux-online-study-demo":
+  version: 0.0.0-use.local
+  resolution: "redux-online-study-demo@workspace:redux-online-study-demo"
+  dependencies:
+    bootstrap: ^5.3.3
+    react: ^18.3.1
+    react-bootstrap: ^2.10.4
+    react-dom: ^18.3.1
+    react-scripts: 5.0.1
+  languageName: unknown
+  linkType: soft
+
 "redux-study@workspace:redux-study":
   version: 0.0.0-use.local
   resolution: "redux-study@workspace:redux-study"
@@ -13543,8 +13555,8 @@ __metadata:
   linkType: hard
 
 "tailwindcss@npm:^3.0.2":
-  version: 3.4.7
-  resolution: "tailwindcss@npm:3.4.7"
+  version: 3.4.9
+  resolution: "tailwindcss@npm:3.4.9"
   dependencies:
     "@alloc/quick-lru": ^5.2.0
     arg: ^5.0.2
@@ -13571,7 +13583,7 @@ __metadata:
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: 9c769ab5ddcd4aaf99a9798f89dab5816e801fd6b5cab352b54ebfaeb2b53dd322604e6dfbcb70633c3bae17c9432cebcdbe85ca5ca6d261ec674f8d1b11e29c
+  checksum: 2479a9fb30b058a30c4e6dc897afc46359fd04e83fc8816421d52aec231b1b99d38ae381730e13d377d7cf459c1bbe157b82055ce20baceeba7f1ec4ce710e7b
   languageName: node
   linkType: hard
 
@@ -13655,8 +13667,8 @@ __metadata:
   linkType: hard
 
 "terser@npm:^5.0.0, terser@npm:^5.10.0, terser@npm:^5.26.0":
-  version: 5.31.3
-  resolution: "terser@npm:5.31.3"
+  version: 5.31.5
+  resolution: "terser@npm:5.31.5"
   dependencies:
     "@jridgewell/source-map": ^0.3.3
     acorn: ^8.8.2
@@ -13664,7 +13676,7 @@ __metadata:
     source-map-support: ~0.5.20
   bin:
     terser: bin/terser
-  checksum: cb4ccd5cb42c719272959dcae63d41e4696fb304123392943282caa6dfcdc49f94e7c48353af8bcd4fbc34457b240b7f843db7fec21bb2bdc18e01d4f45b035e
+  checksum: edd2de6569116f637bb2e154c913e6ea434cadd6bcf5df41cf62000e3c69ec41f95be66fe639b57b95564545c9f7c0fcb28ca63351424a08e244a8b49ed12ac3
   languageName: node
   linkType: hard
 
@@ -13890,9 +13902,9 @@ __metadata:
   linkType: hard
 
 "type-fest@npm:^4.18.2":
-  version: 4.23.0
-  resolution: "type-fest@npm:4.23.0"
-  checksum: 75466563be2d3d116a0b70ffe76a7f72947e3350ceacbc8509a7d841670dddc2fbb008109f0307888137794cf25681fd50f65bf8873bcdc17bc7ac8912c70114
+  version: 4.24.0
+  resolution: "type-fest@npm:4.24.0"
+  checksum: f02e28bb12ce290f9880937b3c65d3cc4f0fdd89776b4b78d392aece0eb031c7ea9c1d6c536011c63bb8d0a6c72359336287f23f940204508a42a442c98c4d25
   languageName: node
   linkType: hard
 
