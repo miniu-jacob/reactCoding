@@ -13,7 +13,8 @@
     "route-tutorial",
     "router-exam-second",
     "shopping-mall-second",
-    "redux-online-study-demo"
+    "redux-online-study-demo",
+    "next-tutorial"
   ],
   "dependencies": {
     "@restart/ui": "^1.8.0",
