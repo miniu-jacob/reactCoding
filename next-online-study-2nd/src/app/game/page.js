@@ -18,6 +18,7 @@ const MyBox = ({userSelect, comSelect, player}) => {
             <Heading>{player}</Heading>
             <Image src={imgUrl} 
                 w={'70%'} alt='game image'
+                display={imgUrl ? 'block', 'none'}
             />
             <Text fontWeight={'bold'} size={'lg'} fontSize={'30px'}
                 display={ !userSelect ? 'none' : 'block' }
