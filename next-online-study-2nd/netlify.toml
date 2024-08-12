@@ -1,0 +1,6 @@
+[build]
+  command = "yarn build"
+  environment = { NODE_VERSION = "20.15.0" }
+
+[context.production.environment]
+  NODE_VERSION = "20.15.0"
