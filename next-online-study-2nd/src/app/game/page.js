@@ -17,7 +17,7 @@ const MyBox = ({userSelect, comSelect, player}) => {
         >
             <Heading>{player}</Heading>
             <Image src={imgUrl} 
-                w={'70%'}
+                w={'70%'} alt='game image'
             />
             <Text fontWeight={'bold'} size={'lg'} fontSize={'30px'}
                 display={ !userSelect ? 'none' : 'block' }
@@ -72,7 +72,7 @@ const Page = () => {
         return (
             itemKeys.map((item, index)=> (
                 <Image key={index} src={gameItem[item].img} w={'50px'} h={'50px'} cursor={'pointer'}
-                onClick={() => gamePlay(item)} />
+                onClick={() => gamePlay(item)} alt='game images' />
             ))
         )
     }
