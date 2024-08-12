@@ -44,7 +44,7 @@ const gameItem = {
 // console.log('imgUrl', gameItem.paper.img )
 
 
-const page = () => {
+const Page = () => {
 
     const [ userSelect, setUserSelect ] = useState(null);
     const [ comSelect, setComSelect ] = useState(null);
@@ -96,4 +96,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
