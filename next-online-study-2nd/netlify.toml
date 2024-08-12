@@ -1,6 +1,8 @@
 [build]
-  command = "yarn build"
+  command = "yarn install" && "yarn build"
+  publish = "out"
   environment = { NODE_VERSION = "20.15.0" }
+  
 
 [context.production.environment]
   NODE_VERSION = "20.15.0"
