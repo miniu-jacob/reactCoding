@@ -11981,6 +11981,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-online-study-2nd@workspace:next-online-study-2nd":
+  version: 0.0.0-use.local
+  resolution: "next-online-study-2nd@workspace:next-online-study-2nd"
+  dependencies:
+    "@chakra-ui/react": ^2.8.2
+    "@emotion/react": ^11.13.0
+    "@emotion/styled": ^11.13.0
+    "@types/react-icons": ^3.0.0
+    eslint: ^8
+    eslint-config-next: 14.2.5
+    framer-motion: ^11.3.24
+    next: 14.2.5
+    react: ^18
+    react-dom: ^18
+  languageName: unknown
+  linkType: soft
+
 "next-tutorial@workspace:next-tutorial":
   version: 0.0.0-use.local
   resolution: "next-tutorial@workspace:next-tutorial"

@@ -14,7 +14,8 @@
     "router-exam-second",
     "shopping-mall-second",
     "redux-online-study-demo",
-    "next-tutorial"
+    "next-tutorial",
+    "next-online-study-2nd"
   ],
   "dependencies": {
     "@restart/ui": "^1.8.0",
