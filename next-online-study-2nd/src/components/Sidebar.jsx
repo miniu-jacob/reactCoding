@@ -20,24 +20,30 @@ function Sidebar(){
 
     
     useEffect(()=>{
-        // 윈도우 크기 변경 이벤트 리스너
-        const handleResize = () => {
-            if(window.innerWidth < 768 && navSize !== 'small'){
+
+        // 미디어 쿼리 이용 
+        const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+        // 변경 감지, 상태 업데이트
+        const handleMediaQueryChange = (event) => {
+            if (event.matches) {
                 setNavSize('small');
-            } else if (window.innerWidth >= 768 && navSize === 'small'){
+            } else {
                 setNavSize('large');
             }
         };
-        handleResize();
-        // 이벤트 리스너 등록
-        window.addEventListener('resize', handleResize);
+
+        handleMediaQueryChange(mediaQuery);
+
+        // 미디어 쿼리 변경 감지 리스너 추가 
+        mediaQuery.addEventListener('change', handleMediaQueryChange);
 
 
-        // 클린업 함수로 이벤트 리스너 제거
+        // 컴포넌트 정리 작업  
         return () => {
-            window.removeEventListener('resize', handleResize);
+            mediaQuery.removeEventListener('change', handleMediaQueryChange);
         };
-    },[navSize, setNavSize]);
+    },[setNavSize]);
 
 
     return (
@@ -66,9 +72,9 @@ function Sidebar(){
                 ></IconButton>
                 <NavItem navSize={navSize} icon={FiHome} title={'홈으로 가기'} href={'/'}></NavItem>
                 <NavItem navSize={navSize} icon={FiCalendar} title={'가위바위보게임'} href={'/game'} ></NavItem>
+                <NavItem navSize={navSize} icon={FiBriefcase} title={'클래스 컴포넌트'} href={'/gameclass'} ></NavItem>
                 <NavItem navSize={navSize} icon={FiUser} title={'날씨앱'} href={'/weather'} ></NavItem>
                 <NavItem navSize={navSize} icon={IoPawOutline} title={'쇼핑몰'} href={'/shop'} ></NavItem>
-                {/* <NavItem navSize={navSize} icon={FiBriefcase} title={'Stocks'} href={'/game'} ></NavItem> */}
                 <NavItem navSize={navSize} icon={FiSettings} title={'환경설정'} href={'/settings'} ></NavItem>
             </Flex>
 

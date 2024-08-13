@@ -30,6 +30,8 @@ const MyBox = ({userSelect, comSelect, player, result}) => {
             flexDir={'column'}
             size={ ['130px', '150px', '350px']} 
             border={`5px solid ${borderColor}`}
+            backgroundColor={'rgba(255,255,255,0.8)'}
+            borderRadius={'25px'}
         >
             <Heading fontSize={[20, 30, 30]}>{player}</Heading>
             <Image src={imgUrl} 
@@ -68,6 +70,9 @@ const Page = () => {
     const [playerResult, setPlayerResult] = useState('');
     const [ computerResult, setComputerResult] = useState('');
     const [ result, setResult] = useState('');
+    const [ selectedButton, setSelectedButton ] = useState(null);
+
+    const  backgroundImage = 'images/gameDefault.jpg';
 
 
     const comRandomChoice = () => {
@@ -94,6 +99,7 @@ const Page = () => {
 
     const gamePlay = (item) => {
         setUserSelect(item);
+        setSelectedButton(item);
         const comValue = comRandomChoice();
         setComSelect(comValue);
 
@@ -110,8 +116,10 @@ const Page = () => {
         // console.log('itemKeys:', itemKeys)
         return (
             itemKeys.map((item, index)=> (
-                <Image key={index} src={gameItem[item].img} w={'50px'} h={'50px'} cursor={'pointer'}
-                onClick={() => gamePlay(item)} alt='game images' />
+                <Image key={index} src={gameItem[item].img} w={'50px'} h={'50px'} 
+                cursor={'pointer'} 
+                backgroundColor={ selectedButton === item ? 'orange.100' : 'rgba(255,255,255,0.6)'} 
+                onClick={() => gamePlay(item)} alt='game images'borderRadius={'10px'} />
             ))
         )
     }
@@ -121,17 +129,28 @@ const Page = () => {
     }, [userSelect, comSelect, result ]);
 
   return (
-    <Flex flexDir={'column'} alignItems={'center'} mt={[20, 20, 30]}
-    >
-        <Heading fontSize={[20, 30, 30]}>가위 바위 보 게임을 시작합니다  </Heading>
-        <Flex flexDir={'Row'} gap={5} mt={5} >
-            <MyBox userSelect={userSelect} player={'Player'} result={result}></MyBox>
-            <MyBox player={'Computer'} comSelect={comSelect} result={result}></MyBox>
-        </Flex>
-        <Flex column={'3'} flexDir={'row'} gap={3} mt={3}>
-            <MyImage></MyImage>
+    <Flex w={'100%'} h={'100%'} justifyContent={'center'}
+        backgroundSize={['contain','cover']}
+        backgroundPosition={'center'}
+        backgroundRepeat={['repeat', 'no-repeat']}
+        borderRadius={'25px'}
+        backgroundImage={`url(${backgroundImage})`}
+        >
+        <Flex flexDir={'column'} alignItems={'center'} mt={[20, 20, 30]}
+            // backgroundColor={'rgba(255,255,255,0.6)'}
+        >
+            <Heading fontSize={[20, 30, 30]} color={'white'}>가위 바위 보 게임을 시작합니다  </Heading>
+            <Flex flexDir={'Row'} gap={5} mt={5} >
+                <MyBox userSelect={userSelect} player={'Player'} result={result} />
+                <MyBox player={'Computer'} comSelect={comSelect} result={result}/>
             </Flex>
-        <Heading mt={3}>{ result === 'Tie!' ? 'Tie!' : ( result === 'Win!' ? 'Winner' : 'Loser!')}</Heading>
+            <Flex column={'3'} flexDir={'row'} gap={3} mt={3}>
+                <MyImage></MyImage>
+                </Flex>
+            <Heading mt={3} backgroundColor={'rgba(255,255,255,0.6)'}
+                borderRadius={'10px'} p={1}
+            >{ result === 'Tie!' ? 'Tie!' : ( result === 'Win!' ? 'Winner' : 'Loser!')}</Heading>
+        </Flex>
     </Flex>
   )
 }
