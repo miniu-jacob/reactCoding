@@ -1,7 +1,6 @@
 // * useContext 훅을 가져온다. 
 import React, { useContext, useEffect } from 'react'
 import { Button, ButtonGroup } from '@chakra-ui/react';
-import config from '@/apikey';
 import { getUrl } from '../utils/WeatherUtils';
 
 // * 정의해 둔 WeatherContext 를 가져온다. 

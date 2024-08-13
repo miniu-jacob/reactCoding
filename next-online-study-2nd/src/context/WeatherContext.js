@@ -1,6 +1,5 @@
 import { useEditable } from '@chakra-ui/react';
 import React, { createContext, useEffect, useState } from 'react';
-import config from '@/apikey';
 import { getUrl, fetchWeatherData } from '@/app/weather/utils/WeatherUtils';
 // * Step 1: createContext, useState를 불러온다. 
 
