@@ -7,8 +7,9 @@ const MainLayout = ({ children }) => {
   return (
         <HStack w={'full'} h={'100vh'} bg='gray.100' padding={3} spacing={3}>
             <Sidebar></Sidebar>
-            <Flex w={'full'} h={'full'} bg={'white'} alignItems={'center'} justifyContent={'center'}
-                flexDirection={'column'} position={'relative'} borderRadius={'3xl'}
+            <Flex w={'full'} h={'full'} bg={'white'} alignItems={'center'} justifyContent={'flex-start'}
+                flexDirection={'column'} position={'relative'} borderRadius={'3xl'} 
+                mt={[0,0,0]}
             >
                 {/* 여기서 children 을 랜더링하여 page.js 의 콘텐츠 표시 */}
                 { children }

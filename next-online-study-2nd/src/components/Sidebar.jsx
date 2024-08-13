@@ -16,24 +16,28 @@ function Sidebar(){
     // const [navSize, changeNavSize] = useState('large'); 
     // * 상태와 토글 함수 사용 
     // const data = useContext(SidebarContext);
-    const { navSize, toggleNavSize } = useContext(SidebarContext);
+    const { navSize, setNavSize , toggleNavSize } = useContext(SidebarContext);
 
     
     useEffect(()=>{
         // 윈도우 크기 변경 이벤트 리스너
         const handleResize = () => {
-            if(window.innerWidth < 180 && navSize !== 'small'){
-                toggleNavSize();
-            } 
+            if(window.innerWidth < 768 && navSize !== 'small'){
+                setNavSize('small');
+            } else if (window.innerWidth >= 768 && navSize === 'small'){
+                setNavSize('large');
+            }
         };
+        handleResize();
         // 이벤트 리스너 등록
         window.addEventListener('resize', handleResize);
+
 
         // 클린업 함수로 이벤트 리스너 제거
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    },[navSize, toggleNavSize]);
+    },[navSize, setNavSize]);
 
 
     return (
@@ -70,7 +74,7 @@ function Sidebar(){
 
             <Flex
                 flexDir={'column'} w={'100%'} 
-                alignItems={'enter'} 
+                alignItems={'center'} 
                 justifyContent={'center'}
 
 
