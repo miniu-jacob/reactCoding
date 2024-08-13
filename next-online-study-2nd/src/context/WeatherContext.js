@@ -28,9 +28,9 @@ export const WeatherProvider = ({ children }) => {
                 try {
                     // console.log('Selected city: ', selectedCity)
                     // Netlify 용도 
-                    // const apiKey = process.env.API_KEY;
+                    const apiKey = process.env.API_KEY;
                     // Local 용도
-                    const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+                    // const apiKey = process.env.NEXT_PUBLIC_API_KEY;
                     const url = await getUrl(selectedCity, apiKey);
                     const data = await fetchWeatherData(url);
                     setWeatherData(data);
