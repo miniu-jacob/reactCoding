@@ -27,7 +27,10 @@ export const WeatherProvider = ({ children }) => {
                 // ! try , catch 문으로 변경 (fetch API 대신)
                 try {
                     // console.log('Selected city: ', selectedCity)
-                    const apiKey = config.API_KEY;
+                    // Netlify 용도 
+                    // const apiKey = process.env.API_KEY;
+                    // Local 용도
+                    const apiKey = process.env.NEXT_PUBLIC_API_KEY;
                     const url = await getUrl(selectedCity, apiKey);
                     const data = await fetchWeatherData(url);
                     setWeatherData(data);
