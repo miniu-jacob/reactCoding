@@ -15,7 +15,10 @@
     "shopping-mall-second",
     "redux-online-study-demo",
     "next-tutorial",
-    "next-online-study-2nd"
+    "next-online-study-2nd",
+    "next-online-study-3rd",
+    "next-online-study-4th",
+    "next-online-study-5th"
   ],
   "dependencies": {
     "@restart/ui": "^1.8.0",
