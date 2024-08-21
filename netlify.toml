@@ -1,0 +1,4 @@
+[build]
+  base    = "shopping-mall-second"
+  publish = "shopping-mall-second/build"
+  command = "npm run build"
