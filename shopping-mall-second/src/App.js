@@ -2,8 +2,8 @@ import './App.css';
 import Navbar from './component/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Routes, Route, useNavigate, useSearchParams } from 'react-router-dom';
-import { Products, Login, User, SearchResult, ProductDetailPage, FilteredProducts } from './page';
+import { Routes, Route } from 'react-router-dom';
+import { Products, Login, User, SearchResult, FilteredProducts } from './page';
 import  PrivateRoute from './route/PrivateRoute';
 import { useState, useEffect } from 'react';
 

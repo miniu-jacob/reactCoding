@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import { Container,Row, Stack, Col, DropdownButton, Dropdown, Button } from 'react-bootstrap';
+import { Container,Row, Stack, Col, Dropdown, Button } from 'react-bootstrap';
 
 
 const ProductDetailPage = () => {
