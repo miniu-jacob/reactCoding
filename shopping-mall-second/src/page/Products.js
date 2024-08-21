@@ -12,7 +12,9 @@ const Products = () => {
 
         let searchQuery = query.get('q') || '';
         console.log('쿼리값은: ', searchQuery);
-        let url = `http://localhost:5050/products?q=${searchQuery}`
+        // let url = `http://localhost:5050/products?q=${searchQuery}`
+        let url = `https://my-json-server.typicode.com/miniu-jacob/json-jacob-shopping/products?q=${searchQuery}`
+        
 
         // const url = 'http://localhost:5050/products';
         fetch(url)
