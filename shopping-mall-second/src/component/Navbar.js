@@ -13,6 +13,7 @@ const Navbar = ({ hasPermission, setHasPermission }) => {
 
     const colCommon = 'col-auto border-bottom border-black border-1';
     const colSearch = `${colCommon} ms-3 me-auto d-md-none`;
+    const colSecondSearch = `${colCommon} me-3 ms-auto d-none d-md-block`;
     const colLogin = `col-auto me-3 ms-auto`;
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const navigate = useNavigate();
@@ -89,6 +90,9 @@ const Navbar = ({ hasPermission, setHasPermission }) => {
                     {menuItems.map((menu, index) => (
                         <button className='border-0 bg-white' key={index}>{menu}</button>
                     ))}
+                </Col>
+                <Col className={`${colSecondSearch}`}>
+                    <SearchBar />
                 </Col>
             </Row>
         </Container>
