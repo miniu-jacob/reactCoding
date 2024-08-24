@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.side-menu {
+    position: fixed;
+    top:0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    transition: left 0.3s ease;
+    z-index:  1000;
+}
+
+.side-menu.open {
+    left: 0;
+}
+
+.menu-content {
+    padding: 1rem;
+}
